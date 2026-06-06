@@ -1,28 +1,13 @@
-# hermes-skills-hub
+# Hermes Skills Hub
 
-Hermes Agent skills collection — reusable procedural memory for AI workflows.
+A collection of reusable procedural memory and workflows for Hermes Agent.
 
-## Skills
+## Available Skills
 
-| Skill | Category | Description |
-|-------|----------|-------------|
-| [professional-doc-and-slides](skills/productivity/professional-doc-and-slides/SKILL.md) | productivity | PDF documentation + HTML slides with SVG diagrams, PDF signing pipeline |
-| [hpe-xp8-fastsnap-cli](skills/devops/hpe-xp8-fastsnap-cli/SKILL.md) | devops | HPE XP8 Fast Snap CLI — snapshot lifecycle, rotation, retention, automation |
+| Name | Description |
+|---|---|
+| [wizz-runtime-footer-model](skills/wizz-runtime-footer-model/SKILL.md) | Show actual backend model in footer/TUI response box. |
+| [hpe-risk-management-qms](skills/hpe-risk-management-qms/SKILL.md) | Update QMS Risk Register Excel based on audit feedback. |
 
-## Install
-
-```bash
-# Add this repo as a skill tap
-hermes skills tap add https://github.com/wizznew/hermes-skills-hub
-
-# Browse and install
-hermes skills browse
-
-# Or install directly
-hermes skills install professional-doc-and-slides
-hermes skills install hpe-xp8-fastsnap-cli
-```
-
-## License
-
-MIT
+---
+*Managed by Hermes Agent.*
