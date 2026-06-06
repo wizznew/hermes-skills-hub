@@ -1,0 +1,77 @@
+# Risk #1 Discussion Notes – BCP: Business Continuity
+
+## 1. Announcement Protocol — Mitigation or Contingency?
+
+| Jenis       | Definisi                                 | Contoh Risk #1                                                  |
+|-------------|------------------------------------------|-----------------------------------------------------------------|
+| Mitigation  | Proactive — siapkan SEBELUM risk terjadi | Buat SOP Komunikasi BCP — define who, channel, timing, template |
+| Contingency | Reactive — jalankan SETELAH risk terjadi | Eksekusi SOP Komunikasi — kirimkan announcement ke customer     |
+
+Jawab: Pendefinisian protokol (siapa, channel apa, template) masuk Mitigation. Eksekusi announcement saat incident terjadi masuk Contingency.
+
+Tapi dalam Risk Register, cukup tulis "BCP Communication Protocol" sebagai satu item di Contingency, karena "siapa & channel apa" akan terdokumentasi di SOP terpisah.
+
+---
+
+## 2. Siapa yang Announce? — High Management vs Manager
+
+| Customer Tier | Contoh | Announcement By | Channel | Timing |
+|---|---|---|---|---|
+| Tier 1 (Strategic) | Bank Danamon, Mandiri | Service Delivery Manager — untuk operational update | Telepon langsung + Email formal | Dalam 1 jam |
+| Tier 1 — Escalation | Jika ada SLA breach / kontraktual | Top Management (Ops Director/ASM) untuk apology & account-level communication | Telepon + Email | Dalam 2 jam |
+| Tier 2 (Standard) | Non‑critical accounts | Service Delivery Manager | Email blast | Dalam 2 jam |
+| Tier 3 (Ad‑hoc) | Non‑contract customer | Dispatcher/CS | Email | Dalam 4 jam |
+
+**Kenapa ini pendekatan yang baik?**
+- Tidak semua escalation perlu ke top management — membingungkan dan tidak efisien
+- Tapi untuk customer kunci, top management involvement menunjukkan commitment & accountability
+- Auditor suka pendekatan risk‑based seperti ini — proportional terhadap importance
+
+---
+
+## 3. Revisi CSR — Golden Unit Logic
+
+### Perbandingan: Sebelum vs Sesudah
+
+| Kondisi                     | Before                                  | After                                                    |
+|-----------------------------|-----------------------------------------|----------------------------------------------------------|
+| Customer dengan Golden Unit | CSR tanpa klarifikasi                   | ✅ CSR via remote guidance — spare part sudah di site    |
+| Customer tanpa Golden Unit  | CSR — impossible                        | ✅ Schedule support + estimate waktu transportasi normal |
+| Transportasi terganggu      | Kontradiksi (CSR butuh kirim spare)     | ✅ Resolved — Golden Unit bypass kebutuhan transport     |
+| Consistency                 | Satu plan untuk semua — tidak realistis | ✅ Tiered approach — sesuai kemampuan customer           |
+
+### Contoh Isi Setelah Direvisi
+
+| Section | Isi Baru |
+|---|---|
+| **Mitigation Plan** | • Maintain database emergency contact customer (runs already)<br>• Define BCP Communication Protocol — who, channel, timing, template per customer tier<br>• Maintain Golden Unit customer list & ensure currency |
+| **Contingency Plan** | • For customers with Golden Unit: Activate CSR via remote guidance (phone/email). No transportation dependency.<br>• For customers without Golden Unit: Reschedule support. Provide ETA based on transportation recovery estimate. Proactive communication via defined protocol.<br>• Execute BCP Communication Protocol: SDM call Tier 1 customers, email blast others.<br>• Escalate to Top Management if SLA breach incurred on Tier 1 accounts. |
+
+---
+
+## 4. Prediksi Pertanyaan Auditor — & Jawaban
+
+| Pertanyaan | Jawabanmu Bisa |
+|---|---|
+| "You mentioned CSR for Golden Unit customers. Do you have an updated list of which customers have Golden Units — and which don't?" | "Yes, it's part of our Mitigation Plan — we will maintain this list and review quarterly." |
+| "How do you estimate 'when transportation will return to normal'?" | "We have MoU with alternative logistics vendors. ETA is based on their real‑time assessment, plus historical data on route recovery times." |
+| "Who in your team has the authority to activate the BCP Communication Protocol?" | "The Service Delivery Manager on duty. For Tier 1 escalation, the Ops Director/ASM is notified within 2 hours." |
+| "This plan differentiates by customer tier. How do you ensure it's applied consistently?" | "The BCP Communication Protocol SOP will define decision tree by customer tier. Training will be done annually." |
+
+---
+
+## 5. Kesimpulan Risk #1 – Final Draft
+
+| Komponen | Isi |
+|---|---|
+| Risk | Business Continuity during strike or natural disaster, unavailability of transportation. Customer deliverables can get impacted. |
+| Mitigation Plan | • Maintain emergency contact database (already running)<br>• Define BCP Communication Protocol — who, channel, timing, template per customer tier<br>• Maintain Golden Unit customer list & ensure currency |
+| Contingency Plan | • Golden Unit customer: CSR via remote guidance (no transportation need)<br>• Non‑Golden customer: Reschedule support + provide ETA based on transportation recovery<br>• Communication: SDM call Tier 1 customers, email blast others<br>• Escalation: Top Management notified within 2 hours for Tier 1 SLA breach |
+| Status Risk | In Treatment |
+| Risk Response | Mitigate (reduce impact through tiered approach) |
+| Target Closure | [isi date] |
+
+---
+
+*Discussion date: 29 May 2026*  
+*Prepared for: Team review*
